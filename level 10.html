@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" font-sans shadow-none">
+
+  <!-- Container -->
+  <div class=" bg-white">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white text-center py-12">
+      <h1 class="text-4xl font-bold mb-2">Website Layout</h1>
+      <p class="text-gray-300">Simple div-based structure</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-slate-700">
+      <ul class="flex justify-center space-x-10 py-4 text-white font-medium">
+        <li><a href="#" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="hover:text-gray-300">About</a></li>
+        <li><a href="#" class="hover:text-gray-300">Services</a></li>
+        <li><a href="#" class="hover:text-gray-300">Portfolio</a></li>
+        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Section with Sidebar -->
+    <div class="flex flex-col md:flex-row p-8 gap-8">
+
+      <!-- Main Content -->
+      <main class="bg-gray-200 p-10">
+
+        <h2 class="text-4xl font-bold text-black-700 mb-4">
+          Main Content Area
+        </h2>
+
+        <p class="text-black-600 mb-6 text-1xl font-medium">
+          This is the primary content section of the webpage.
+        </p>
+
+        <!-- Content Box 1 -->
+        <div class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white p-6 rounded-lg mb-6">
+          <h3 class="text-xl font-bold mb-2">Content Box 1</h3>
+          <p class="font-medium">This demonstrates how divs can be nested to create complex layouts.</p>
+        </div>
+
+        <!-- Content Box 2 -->
+        <div class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white p-6 rounded-lg  mb-6">
+          <h3 class="text-xl font-bold mb-2">Content Box 2</h3>
+          <p class="font-medium">Each div can have its own styling and content structure.</p>
+        </div>
+
+        <!-- Inline Styled Div (Red Box) -->
+        <div class="bg-red-400 text-white p-6 rounded-lg ">
+          <h3 class="text-xl font-bold mb-2">Inline Styled Div</h3>
+          <p class="font-medium">This div uses inline styles for demonstration.</p>
+        </div>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="flex-col bg-gray-200 p-6  h-fit flex ml-auto">
+        <h3 class="text-4xl font-bold text-black-700 mb-2">Sidebar</h3>
+        <p class="text-black-600 mb-5 font-medium">
+          This is the sidebar content area.
+        </p>
+
+        <div class="bg-green-600 text-white p-6 rounded-md">
+          <h3 class="text-xl font-bold mb-5">Sidebar Item 1</h3>
+          <p class="font-medium">Additional information or links</p>
+        </div>
+
+        <div class="bg-purple-600 text-white p-6 mt-5 rounded-md">
+          <h3 class="text-xl font-bold mb-5">Sidebar Item 2</h3>
+          <p class="font-medium">More sidebar content</p>
+        </div>
+      </aside>
+
+      
+
+    </div>
+    
+    <footer class="bg-slate-700 pt-10 pb-6 items-bottom mt-10 justify-center flex text-white font-medium">
+    <p>© 2024 Simple Layout. All rights reserved.</p> 
+    </footer>
+   
+  </div>
+  
+ 
+</body>
+</html>

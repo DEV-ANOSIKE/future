@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="pl-6">
+    <div>
+        <h1 class="font-bold text-xl">Block Elements</h1>
+
+        <div class="flex flex-col">
+            <div class=" border bg-blue-300 border-blue-800 w-45 mb-2 pb-7  pl-2">Block 1</div>
+
+            <div class=" block bg-blue-300 border border-blue-800 w-45 pb-7 mb-5 pl-2 ">Block 2</div>
+
+
+        </div>
+
+        
+    </div>
+
+
+    <div>
+        <h2 class="font-bold text-xl mb-3">Inline Elements</h2>
+
+        <div class=" space-x-4 flex flex-row">
+
+            <div class="bg-green-300 px-2 py-1 text-sm border border-green-800 ">
+                <p>Inline 1</p>
+            </div>
+
+            <div class="bg-green-300 text-sm px-2 py-1 border border-green-800 ">Inline 2</div>
+
+            <div class="bg-green-300 px-2 py-1 text-sm border border-green-800 ">Inline 3</div>
+
+
+        </div>
+
+        
+    </div>
+
+    <div>
+        <h2 class="font-bold text-xl mt-3 mb-2">Inline-Block Elements</h2>
+
+        <div class="Inline-Block space-x-4 flex flex-row">
+
+            <div class="flex flex-row">
+
+                <div class="bg-red-300  text-sm border border-red-500 mr-3 ">Inline-Block 1</div>
+
+                <div class="bg-red-300 text-sm  border border-red-500 mr-3  ">Inline-Block 2</div>
+
+                <div class="bg-red-300 text-sm pb-6 border border-red-500 mr-3 ">Inline-Block 3</div>
+            </div>
+           
+        </div>
+
+
+    </div>
+
+    <h2 class="font-bold text-xl mt-3">List Items</h2>
+
+    <ul class="list-disc pl-6">
+        <li>List Item 1</li>
+
+        <li>List Item 2</li>
+
+        <li>List Item 3</li>
+    </ul>
+
+
+    <div>
+
+        <h2 class="font-bold text-xl mt-3 mb-3">Hidden Element</h2>
+
+        <div class=" flex flex-col ">
+
+            <div class="border bg-blue-300 border-blue-800 pt-1 mb-2 w-50 text-sm pb-8 pl-2">Visible Element</div>
+
+            <div class="border bg-blue-300 border-blue-800 pt-1 w-50 text-sm pb-8 pl-2">Visible Element</div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

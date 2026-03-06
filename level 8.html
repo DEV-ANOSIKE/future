@@ -6,28 +6,103 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="px-[50px]">
     <div class="bg-gray-200 pt-5 pb-5 mt-10 border-b-4 border-gray-300">
         <h1 class="text-[50px] font-bold flex justify-center">CSS Backgrounds & Borders</h1>
     </div>
 
-    <h1 class="text-[30px] font-bold">Background Colors</h1>
+    <h1 class="text-[30px] font-bold mt-5">Background Colors</h1>
 
-    <div class="bg-red-400">
+    <div class="bg-red-400 mt-5">
         <p class="text-white ">Solid red background color</p>
     </div>
 
-    <div class="bg-teal-300">
+    <div class="bg-teal-300 mt-5">
         <p class="text-white ">Solid teal background color</p>
     </div>
 
-     <div class="bg-yellow-300">
+     <div class="bg-yellow-300 mt-5">
         <p class="text-black ">Solid yellow background color</p>
     </div>
 
-    <hr>
+    <hr class="mt-5">
 
-    <h2>Background Gradients</h2>
+    <h2 class="text-[30px] font-bold">Background Gradients</h2>
+
+    <div class=" bg-gradient-to-r from-blue-500 to-purple-600 mt-5">
+        <h3>Linear gradient background (blue to purple) </h3>
+    </div>
+
+    <div class="bg-gradient-to-r from-pink-400 to-purple-300 mt-5 ">
+        <h3>Diagonal gradient background (pink to light pink pink) </h3>
+    </div>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold">Border Styles</h2>
+
+    <div class="border border-solid ">
+        <h3>Solid border</h3>
+    </div>
+
+    <div class="border-[3px] border-dashed border-red-500 mt-5">
+        <h3>Dashed border - 3px width, red color</h3>
+    </div>
+
+     <div class="border-[4px] border-dotted border-teal-500 mt-5">
+        <h3>Dotted border - 4px width, teal color</h3>
+    </div>
+
+     <div class="border border-double p-4 mt-5">
+        <h3>Double border - 1px width</h3>
+    </div>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold mt-5">Individual Border Sides</h2>
+
+    <div class="border-t-4 border-red-500 mt-5">
+        <p>Top border only - red</p>
+    </div>
+
+    <div class="border-r-4 border-teal-500 mt-5">
+        <p>Right border only - teal</p>
+    </div>
+
+    <div class="border-b-4 border-yellow-500 mt-5">
+        <p>Bottom border only - yellow</p>
+    </div>
+
+    <div class="border-l-4 border-blue-500 mt-5">
+        <p>Left border only - blue</p>
+    </div>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold">Border Radius (Rounded Corners) </h2>
+
+    <div class="grid-row flex">
+        <p class="w-24 h-24 bg-red-500 rounded-[5px] flex justify-center mr-5 items-center pl-2">Small radius (5px) </p>
+        <p class="w-24 h-24 bg-blue-500 rounded-[15px] justify-center flex mr-5 items-center pl-2">Medium radius (15px) </p>
+        <p class="w-24 h-24 bg-yellow-500 rounded-full justify-center item-center flex items-center">Circle (50%) </p>
+    </div>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold">Combined Background & Border</h2>
+
+    <div class=" p-6 bg-gradient-to-r from-purple-700 to-pink-200 
+            border-4 border-yellow-500 rounded-[15px] 
+            text-white mt-5 flex">
+        <h3 class="flex justify-center">Styled Element</h3>
+        <p class="flex justify-center">This combines gradient background, colored border, and rounded corners</p>
+    </div>
+
+    <div class="bg-gray-100 border-l-4 border-blue-800 p-4 mt-5">
+        <p>This uses a light gray background with a left border accent</p>
+    </div>
+
+    <p class="italic justify-center flex">Experiment with different background and border combination to create visually appealing elements </p>
 
     
     

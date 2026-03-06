@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="px-[30px]">
+    <h1 class="text-[50px] font-bold flex justify-center">CSS Box Model</h1>
+
+    <h2 class="text-[30px] font-bold">Understanding the Box Model</h2>
+
+    <div class="border-3 border-dashed p-4">
+        <div class="border-3 border-red-500 p-4">
+            <div class="border-3 border-blue-500 p-4 text-center ">Green: Content | Blue: Padding | Red: Border |
+                Outside: Marging
+                <div class="border-3 border-green-500 p-4">
+                    Content area
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold">Margin Examples</h2>
+
+    <p class="bg-red-200 m-[10px]">Margin: 10px (all sides) </p>
+
+    <p class="bg-blue-200 my-[20px] mx-[10px]">Margin:20px (top/bottom) 10px (left/right) </p>
+
+    <p class="bg-blue-200 mr-[20px] ml-[40px] mt-[10px] mb-[30px]">Margin: 10px(top) 20px(right) 30px(bottom) 40px(left)
+    </p>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold"> Padding Examples</h2>
+
+    <p class="bg-yellow-200 border-3 border-yellow-500 p-[10px] mt-5">Padding: 10px (all sides) </p>
+
+    <p class=" bg-purple-200 border-3 border-purple-500 py-[20px] px-[10px] class= mt-5">Padding: 20px (top/bottom) 10px
+        (left/right) </p>
+
+    <p class=" bg-blue-200 pt-[10px] pr-[20px] pb-[30px] pl-[40px] border-3 border-blue-500 mt-5">Padding: 10px (top )
+        Padding: 20px (right) 30px (bottom) 40px (left) </p>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold">Box-Sizing Property</h2>
+
+    <div class="grid-row flex mt-5">
+        <div class="bg-red-200 border-3 border-red-500 w-[800px] mr-[100px] p-[40px]">
+            <p>content-box</p>
+            <p>Width: 200px + padding +border</p>
+            <p>Total: 200 + 40 + 10 = 250px</p>
+        </div>
+
+        <div class="bg-gray-200 border-3 border-green-500 w-[800px] p-[40px]">
+            <p>border-box</p>
+            <p>Width: 200px includes padding & border</p>
+            <p>Content: 200 - 40 - 10 = 150px</p>
+        </div>
+
+    </div>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold">Display Property</h2>
+
+    <div class="bg-gray-100 flex grid-row mt-5 p-[20px]">
+        <p class="bg-red-200 border-2 border border-red-500 mr-[30px] p-[2px]">Inline Element 1</p>
+
+        <p class="bg-green-200 border-2 border border-green-500 mr-[30px] p-[2px]">Inline Element 2</p>
+
+        <p class="bg-blue-200 border-2 border border-blue-500 p-[2px]">Inline Element 3</p>
+    </div>
+
+    <p class="bg-blue-200 border border-2 border-blue-500 mt-5 p-[10px]">Block Element - takes full width</p>
+
+    <p class="bg-purple-200 border border-2 border-purple-500 mt-5 p-[10px]">Another Block Element</p>
+
+    <div class="bg-red-100 flex grid-row mt-5 p-[20px]">
+        <p class="bg-yellow-200 border-2 border border-yellow-500 mr-10 p-[20px]">Inline-Block 1</p>
+
+        <p class="bg-blue-200 border-2 border border-purple-700 mr-10 p-[20px]">Inline-Block 2</p>
+
+        <p class="bg-teal-200 border-2 border border-teal-500 p-[20px]">Inline-Block 3</p>
+    </div>
+
+    <hr class="mt-5">
+
+    <h2 class="text-[30px] font-bold">Practical Example</h2>
+
+    <div class="border border-2 border-gray-200 my-[20px] py-[30px] px-[40px]">
+        <h3 class="font-medium">Card Component</h3>
+
+        <div class="pt-[20px] ">This card demonstrates box model properties:
+
+            <ul class="list-disc list-inside mr-10px pl-[20px] pt-[20px] ">
+                <li>Margin: Creates space around the card</li>
+                <li>Border: Defines the card boundary</li>
+                <li>Padding: Creates spaces inside the card</li>
+                <li>Content: The actual text and elements</li>
+            </ul>
+        </div>
+
+        <p class="bg-gray-200 justify-center flex mt-5">Total width = margin + border + padding + content</p>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
